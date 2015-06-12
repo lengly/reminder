@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"name": "Attachment Reminder",
+	"name": "Mail Reminder",
 	"version": "0.0.1",
 	"permissions": [ "tabs" ],
 	"content_scripts": [

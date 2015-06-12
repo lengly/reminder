@@ -1,6 +1,6 @@
 function judge(p) {
      for (var i = 0; i < p.length; i++) {
-          if (p[i].title == "写信" || p[i].title.search(':') != -1) {
+          if (p[i].querySelector('.nui-ico-compose') != null) {
                return true;
           }
      }
@@ -8,11 +8,9 @@ function judge(p) {
 }
 
 window.addEventListener('popstate', function(event) {
-     
      setTimeout(function () {
-          if (judge(document.getElementsByClassName('nui-tabs-item-selected'))) {
+          if (judge(document.querySelectorAll('.nui-tabs-item-selected'))) {
                alert("别忘了添加附件！");
           }
      }, 1000)
-     
 });
